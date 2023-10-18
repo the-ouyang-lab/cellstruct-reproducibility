@@ -2,7 +2,7 @@ library(Seurat)
 library(SeuratDisk)
 
 loc <- "~/"
-dataset <- "wilk_2020_processed.h5Seurat"
+dataset <- "wilk_2020_processed.HDF5"
 seu <- LoadH5Seurat(paste0(loc,dataset))
 
 seu <- FindVariableFeatures(seu, selection.method = "vst", nfeatures = 2000, verbose = FALSE)
